@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보 처리방침 - 연애 AI</title>
+<style>
+  :root { color-scheme: light dark; --fg: #222; --muted: #666; --bg: #fff; --line: #e5e0e1; --accent: #e0566f; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #eee; --muted: #aaa; --bg: #1f1a1b; --line: #3a3233; --accent: #ffb2bc; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.6em; margin: 0 0 4px; }
+  h2 { font-size: 1.15em; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: .9em; }
+  table { width: 100%; border-collapse: collapse; font-size: .95em; }
+  th, td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>개인정보 처리방침</h1>
+<p class="muted">시행일: 2026년 10월 10일</p>
+
+<p>이대성(이하 "운영자")은 연애 AI 앱(이하 "서비스")을 운영하면서 「개인정보 보호법」에 따라 이용자의 개인정보를 다음과 같이 처리합니다.
+서비스는 AI가 만든 가상 인물(캐릭터)과 메신저처럼 대화하는 서비스이며, 만 19세 이상만 이용할 수 있습니다.</p>
+
+<h2>1. 처리하는 개인정보와 목적</h2>
+<table>
+  <tr><th>항목</th><th>목적</th></tr>
+  <tr><td>구글 계정 고유 식별자, 구글 계정 이름</td><td>회원 식별과 로그인. 이메일 주소는 저장하지 않습니다.</td></tr>
+  <tr><td>만 19세 이상 확인 기록(확인한 시각)</td><td>연령 제한 서비스 운영</td></tr>
+  <tr><td>대화 내용(이용자가 보낸 메시지, 캐릭터의 답)과 대화에서 정리한 기억·요약</td><td>캐릭터의 답 생성, 이전 대화를 이어 가기 위한 기억, 캐릭터가 먼저 보내는 메시지</td></tr>
+  <tr><td>기기 알림 식별자(Firebase 설치 ID)</td><td>새 메시지 알림 발송</td></tr>
+  <tr><td>로그인 세션 정보, 마지막 이용 시각</td><td>로그인 유지와 보안</td></tr>
+  <tr><td>신고 내용(신고한 메시지, 사유, 이용자가 적은 설명)</td><td>부적절한 AI 답 검토와 서비스 개선</td></tr>
+</table>
+<p>캐릭터의 답은 운영자가 직접 운영하는 서버에서 만듭니다. 대화 내용을 외부 AI 회사에 보내지 않으며, 광고나 마케팅에 쓰지 않습니다.</p>
+
+<h2>2. 보유 기간과 파기</h2>
+<ul>
+  <li>계정을 삭제하면 위의 모든 정보(대화, 기억, 신고 내용 포함)를 지체 없이 파기합니다.</li>
+  <li>채팅방에서 "대화 지우기"를 하면 그 대화의 메시지를 바로 삭제합니다 (기억 유지를 고르면 기억은 남습니다).</li>
+  <li>로그아웃하면 그 기기의 로그인 세션과 알림 식별자를 삭제합니다.</li>
+  <li>법령에 따라 보관해야 하는 정보가 생기면(예: 유료 결제 기록) 그 법령이 정한 기간 동안만 따로 보관합니다.</li>
+  <li>파기는 데이터베이스에서 복구할 수 없게 삭제하는 방법으로 합니다.</li>
+</ul>
+
+<h2>3. 제3자 제공</h2>
+<p>운영자는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 법령에 따라 수사기관 등이 적법한 절차로 요청하는 경우는 예외로 합니다.</p>
+
+<h2>4. 처리 위탁과 국외 이전</h2>
+<table>
+  <tr><th>받는 자</th><th>내용</th><th>이전 국가·방법</th><th>보유 기간</th></tr>
+  <tr>
+    <td>Google LLC (Firebase Cloud Messaging)</td>
+    <td>새 메시지 알림 발송: 기기 알림 식별자, 알림에 표시할 캐릭터 이름과 메시지 첫 문장</td>
+    <td>미국 등 Google 서버, 알림을 보낼 때마다 네트워크로 전송</td>
+    <td>알림 전달 후 Google의 정책에 따름 (전달되지 않은 알림은 최대 6시간)</td>
+  </tr>
+</table>
+<p>알림을 받고 싶지 않으면 휴대폰 설정에서 이 앱의 알림을 끌 수 있습니다. 알림을 끄면 국외 이전도 일어나지 않습니다.
+구글 로그인은 이용자가 Google에 직접 로그인하는 것이며, 운영자는 Google이 확인해 준 계정 식별자와 이름만 받습니다.</p>
+
+<h2>5. 이용자의 권리</h2>
+<ul>
+  <li>앱의 채팅방 메뉴 "기억 보기"에서 캐릭터가 기억하는 내용을 볼 수 있습니다.</li>
+  <li>앱의 설정 → "계정 삭제"로 언제든 계정과 모든 정보를 삭제할 수 있습니다. 앱을 쓸 수 없으면 <a href="account-deletion.html">계정 삭제 안내</a>를 참고해 주세요.</li>
+  <li>개인정보의 열람, 정정, 삭제, 처리 정지를 아래 문의처로 요청할 수 있으며, 운영자는 지체 없이 처리합니다.</li>
+</ul>
+
+<h2>6. 안전성 확보 조치</h2>
+<ul>
+  <li>앱과 서버 사이의 통신은 암호화합니다.</li>
+  <li>로그인 토큰은 원문이 아닌 해시값으로만 저장합니다.</li>
+  <li>데이터베이스와 서버 접근은 운영자로 제한합니다.</li>
+</ul>
+
+<h2>7. 만 19세 미만</h2>
+<p>서비스는 만 19세 미만은 이용할 수 없습니다. 만 19세 미만이 이용한 것을 알게 되면 해당 계정과 정보를 삭제합니다.</p>
+
+<h2>8. 자동 수집 장치</h2>
+<p>서비스는 쿠키나 광고 식별자를 쓰지 않습니다.</p>
+
+<h2>9. 개인정보 보호책임자와 문의</h2>
+<p>개인정보 보호책임자: 이대성<br>문의: <a href="mailto:teseder0011@gmail.com">teseder0011@gmail.com</a></p>
+<p>개인정보 침해에 대한 신고나 상담은 개인정보침해신고센터(국번 없이 118, privacy.kisa.or.kr),
+개인정보분쟁조정위원회(1833-6972, www.kopico.go.kr)에도 할 수 있습니다.</p>
+
+<h2>10. 변경</h2>
+<p>이 방침을 바꾸면 시행 7일 전에 앱과 이 페이지로 알립니다.</p>
+</main>
+</body>
+</html>
